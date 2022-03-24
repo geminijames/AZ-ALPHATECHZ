@@ -7,7 +7,6 @@ import wikipedia
 import time
 from datetime import date
 import pyjokes
-import requests
 from GoogleNews import GoogleNews
 import subprocess
 from pywinauto.application import Application
@@ -48,7 +47,7 @@ def me():
         "Created by Gemini "
     spacek(s)
 
-    spacek("how can i help you !")
+
 
 
 def wishme(s):
@@ -210,7 +209,7 @@ def into():
             print("litsing.........")
             s1 = takecommend().lower()
             s1 = s1.replace('im', '')
-            if 'akhilesh' in s1:
+            if 'Gemini' in s1:
                 sex = 'sir'
 
             else:
@@ -225,7 +224,7 @@ def into():
                     into()
                     i1 = +1
 
-            if 'akhilesh' not in s1:
+            if 'Gemini' not in s1:
                 username(sex)
                 print(sex)
                 wishme(sex)
@@ -270,7 +269,7 @@ def main():
 
             elif 'open code' in queuery:
 
-                codepath = "C:\\Users\\Akhilesh Goswami\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
+                codepath = "C:\\Users\\Gemini Goswami\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
                 os.startfile(codepath)
                 spacek(f"opening vs code {sex}!")
                 spacek(
@@ -326,6 +325,10 @@ def main():
                 spacek("ok sir")
                 geminivis()
 
+            elif 'do you want to tell anything' in queuery or 'tell me anything' in queuery:
+                spacek("yes sir ,   \n "
+                       "viewers subscribe my channel")
+
             elif 'change my name' in queuery or 'change name' in queuery:
                 s = takecommend()
                 spacek("Now your name is ")
@@ -337,17 +340,20 @@ def main():
             elif 'about me' in queuery or 'do you know me' in queuery:
                 spacek("what is your name")
                 s = takecommend().lower()
-                if 'akhilesh' in s:
+                if 'Gemini' in s:
                     my()
                 else:
-                    spacek("i dont have your data")
+                    spacek("yes i Know him because he made me    \t ,  He is very talented person" )
 
-            elif 'exit' in queuery:
+            elif 'exit' in queuery or 'quit' in queuery:
                 spacek("Thanks for giving me your time")
                 exit()
+            elif 'shut up' in queuery:
+                spacek("sorry for disturbing you sir    ")
+                stoplisting()
 
             elif "who made you" in queuery or "who created you" in queuery:
-                spacek("I have been created by Akhilesh.")
+                spacek("I have been created by GEMINI.")
 
             elif 'joke' in queuery:
                 s = pyjokes.get_joke(language='en', category='all')
@@ -372,6 +378,7 @@ def main():
 
             elif "news" in queuery:
                 news(sex)
+
             elif 'shutdown' in queuery or 'sleep my' in queuery:
                 spacek(f"souting down {sex}")
                 os.system("shutdown /h")
@@ -405,10 +412,11 @@ def main():
                 spacek("Here you go with music")
                 # music_dir = "G:\\Song"
                 spacek("you open another programe would you like to sleep mor exit from the program")
-                music_dir = "C:\\Users\\Akhilesh Goswami\\Desktop\\my"
+                music_dir = "C:\\Users\\gemin\\Music"
                 songs = os.listdir(music_dir)
                 print(songs)
                 random = os.startfile(os.path.join(music_dir, songs[1]))
+                exit()
 
             elif 'wrok' in queuery:
                 spacek(f"sorry {sex} because of me you face some problem "
@@ -420,9 +428,9 @@ def main():
                 s = takecommend().lower()
                 spacek(f"nice to meet you {s} ! have a good day!")
 
-            elif "know akhilesh" in queuery:
+            elif "do you Know GEMINI" in queuery:
                 spacek(
-                    f"yes{sex} i know him becuase of him im able to talk to you he is a very nice person would you like to know more about mister akhilesh goswami")
+                    f"yes{sex}  yes because he made ")
                 s = takecommend().lower()
                 if s == "yes":
                     me1()
@@ -436,8 +444,13 @@ def main():
 
 
             elif 'open calculator' in queuery:
-                spacek("open the calculator")
+                spacek("opening the calculator")
                 subprocess.Popen("C:\\Windows\\System32\\calc.exe")
+
+            elif 'open spotify' in queuery:
+                spacek("opening the spotify")
+                subprocess.Popen("C:\\Windows\\System32\\spotify.exe")
+
             elif " want to wirte a note" in queuery:
                 dd()
             elif 'close' in queuery:
@@ -475,6 +488,7 @@ def main():
                 p = "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
                 os.startfile(p)
                 time.sleep(6)
+
             elif 'i want to search' in queuery or 'write' in queuery:
 
                 spacek("ok sir please say what you want to write or search sir")
@@ -485,6 +499,9 @@ def main():
 
             elif 'up' in queuery:
                 pyautogui.press('up')
+
+            elif 'thanks' in queuery:
+                spacek("your welcome sir")
 
             elif 'down' in queuery:
                 pyautogui.press('down')
@@ -498,17 +515,14 @@ def main():
             elif 'enter' in queuery:
                 pyautogui.press('enter')
 
-            elif 'open python' in queuery:
-                spacek("opening python")
-
             elif 'click' in queuery:
                 pyautogui.click()
 
-            elif 'geminivis' in queuery:
+            elif 'gemini' in queuery:
                 spacek(f"gemini 2 point 0 in your service {sex}")
-            elif 'open python' in queuery:
 
-                p = "C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.1.2\\bin\\pycharm64.exe"
+            elif 'open spotify' in queuery:
+                p = ""
                 os.startfile(p)
                 time.sleep(15)
         except Exception as s:
